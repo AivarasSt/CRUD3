@@ -1,0 +1,77 @@
+{
+  "car": [
+    {
+      "id": "101",
+      "brand": "Alfa Romeo",
+      "model": "Stelvio",
+      "year": 2021,
+      "fuelTypes": "petrol",
+      "price": {
+        "amount": 51990,
+        "currency": "€"
+      },
+      "imgSrc": "https://autoplius-img.dgn.lt/ann_3_196301257/alfa-romeo-stelvio-2-0-l-visureigis-2021-benzinas-0.jpg"
+    },
+    {
+      "id": "102",
+      "brand": "Kia",
+      "model": "Sportage",
+      "year": 2021,
+      "fuelTypes": "petrol",
+      "price": {
+        "amount": 29000,
+        "currency": "€"
+      },
+      "imgSrc": "https://autoplius-img.dgn.lt/ann_3_196144565/kia-sportage-komercinis-2021-benzinas-0.jpg"
+    },
+    {
+      "id": "103",
+      "brand": "Ford",
+      "model": "Focus",
+      "year": 2016,
+      "fuelTypes": "diesel",
+      "price": {
+        "amount": 6400,
+        "currency": "€"
+      },
+      "imgSrc": "https://autoplius-img.dgn.lt/ann_3_196205433/ford-focus-1-5-l-universalas-2016-dyzelinas-0.jpg"
+    },
+    {
+      "id": "104",
+      "brand": "Volkswagen",
+      "model": "Arteon",
+      "year": 2018,
+      "fuelTypes": "diesel",
+      "price": {
+        "amount": 28950,
+        "currency": "€"
+      },
+      "imgSrc": "https://autoplius-img.dgn.lt/ann_3_193313027/volkswagen-arteon-2-0-l-kupe-coupe-2018-dyzelinas-0.jpg"
+    },
+    {
+      "id": "105",
+      "brand": "Toyota",
+      "model": "C-HR",
+      "year": 2017,
+      "fuelTypes": "hybrid",
+      "price": {
+        "amount": 19100,
+        "currency": "€"
+      },
+      "imgSrc": "https://autoplius-img.dgn.lt/ann_3_195545079/toyota-c-hr-1-8-l-visureigis-2017-benzinas-elektra-0.jpg"
+    },
+    {
+      "id": "106",
+      "brand": "BMW",
+      "model": "X3 XDRIVE28I",
+      "year": 2015,
+      "fuelTypes": "gas",
+      "price": {
+        "amount": 9800,
+        "currency": "$"
+      },
+      "imgSrc": "https://cs.copart.com/v1/AUTH_svc.pdoc00001/PIX500/dd16296a-3782-45b6-a768-1a197199c763.JPG"
+    }
+    
+  ]
+}
