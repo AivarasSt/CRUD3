@@ -21,10 +21,17 @@ class CarGridComponent {
 
   showError = error => console.error(error);
 
+  wrapChild = element => {
+    const wrapper = document.createElement('div');
+    wrapper.className = 'col-12 col-lg-6 align-self-stretch';
+    wrapper.append(element);
+    return wrapper;
+  }
 
   init = () => {
     this.state.loading = true;
     setTimeout(() => this.fetchCars(), 1000)
+    this.htmlElement.className = 'row g-3 justify-content-center';
     this.render();
   }
 
@@ -35,8 +42,9 @@ class CarGridComponent {
     } else if (cars.length > 0){
       this.htmlElement.innerHTML = '';
       const children = cars
-        .map( x => new CarCardComponent)
+        .map(x => new CarCardComponent(x))
         .map(x => x.htmlElement)
+        .map(this.wrapChild);
       this.htmlElement.append(...children);
     } else {
       this.htmlElement.innerHTML = 'Deja, šiuo metu duomenų nėra';
