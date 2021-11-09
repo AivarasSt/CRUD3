@@ -39,14 +39,14 @@
     {
       "id": "104",
       "brand": "Volkswagen",
-      "model": "Arteon",
-      "year": 2018,
-      "fuelTypes": "diesel",
+      "model": "Golf",
+      "year": 2015,
+      "fuelTypes": "electric",
       "price": {
-        "amount": 28950,
+        "amount": 11500,
         "currency": "€"
       },
-      "imgSrc": "https://autoplius-img.dgn.lt/ann_3_193313027/volkswagen-arteon-2-0-l-kupe-coupe-2018-dyzelinas-0.jpg"
+      "imgSrc": "https://autoplius-img.dgn.lt/ann_3_194671655/volkswagen-golf-hecbekas-2015-elektra-0.jpg"
     },
     {
       "id": "105",
@@ -72,6 +72,5 @@
       },
       "imgSrc": "https://cs.copart.com/v1/AUTH_svc.pdoc00001/PIX500/dd16296a-3782-45b6-a768-1a197199c763.JPG"
     }
-    
   ]
 }

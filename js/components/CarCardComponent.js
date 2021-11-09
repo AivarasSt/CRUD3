@@ -20,8 +20,14 @@ class CarCardComponent {
       <h2 class="badge my-3">${fuelTypes}</h2>
     </div>
     <h3 class="text-muted">${year}</h3>
-    <h2 class="price m-0">${amount}${currency}<h2>   
+    <div class="d-flex justify-content-between">
+      <h2 class="price m-0 pt-1">${amount}${currency}<h2>
+      <button class="btn btn-sm btn-secondary"><i class="bi bi-trash"></i></button>   
+    </div>
     `;
+
+    const delBtn = this.htmlElement.querySelector('.btn');
+    delBtn.addEventListener('click', () => this.props.onDelete(id));
 
     const fuel = this.htmlElement.querySelector(".badge")
     switch (fuelTypes) {
