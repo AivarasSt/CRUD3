@@ -24,17 +24,22 @@ class CarGridComponent {
 
   init = () => {
     this.state.loading = true;
-    this.fetchCars();
-    this.htmlElement = document.createElement('div');
+    setTimeout(() => this.fetchCars(), 1000)
     this.render();
   }
 
   render = () => {
-    const { loading } = this.state;
+    const { loading, cars } = this.state;
     if (loading) {
-      this.htmlElement.innerHTML = `siunčiama...`;
+      this.htmlElement.innerHTML = '<div class="text-center"><img src="assets/loading.gif" /></div>';
+    } else if (cars.length > 0){
+      this.htmlElement.innerHTML = '';
+      const children = cars
+        .map( x => new CarCardComponent)
+        .map(x => x.htmlElement)
+      this.htmlElement.append(...children);
     } else {
-      this.htmlElement.innerHTML = "Parsiųsta!";
-    };
-  }
+      this.htmlElement.innerHTML = 'Deja, šiuo metu duomenų nėra';
+    }
+  } 
 }  
